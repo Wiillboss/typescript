@@ -4,7 +4,6 @@
     // File Layout
     // "rootDir": "./src",
     // "outDir": "./dist",
-
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
@@ -14,16 +13,13 @@
     // "lib": ["esnext"],
     // "types": ["node"],
     // and npm install -D @types/node
-
     // Other Outputs
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
-
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
-
     // Style Options
     // "noImplicitReturns": true,
     // "noImplicitOverride": true,
@@ -31,7 +27,6 @@
     // "noUnusedParameters": true,
     // "noFallthroughCasesInSwitch": true,
     // "noPropertyAccessFromIndexSignature": true,
-
     // Recommended Options
     "strict": true,
     "jsx": "react-jsx",
@@ -40,5 +35,18 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-  }
+  },
+  "exclude": [
+    /*
+    usado para quando criar arquivos (traduzidos, compilados), escolher os que não deseja ser criado, o que deve está escrito é: pasta/nome do arquivo, ou seja,
+      "src/types_funcoes.ts" ou "src/types_funcoes/*" para excluir todos os arquivos dentro da pasta types_funcoes.
+      O objetivo é evitar que o TypeScript crie arquivos .js e .d.ts para os arquivos que não deseja, como por exemplo, arquivos de tipos ou arquivos de teste.
+    */
+
+    
+    //include
+    // usado para escolher os arquivos que deseja ser criado, o que deve está escrito é: pasta/nome do arquivo, ou seja,
+    // "src/index.ts" ou "src/**/*" para incluir todos os arquivos dentro da pasta src.
+    //lembrando que tanto o exclude quanto o include são opcionais, ou seja, se não for especificado, o TypeScript irá incluir todos os arquivos dentro da pasta src. Para usar ambos é necessário que o include seja mais específico do que o exclude, ou seja, o include deve incluir os arquivos que o exclude exclui, caso contrário, o TypeScript irá gerar um erro, e é necessário o uso do terminal /* para incluir ou excluir todos os arquivos dentro de uma pasta, caso contrário, o TypeScript irá gerar um erro.
+  ]
 }

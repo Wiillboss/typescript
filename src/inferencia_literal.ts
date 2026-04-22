@@ -1,5 +1,7 @@
 let willian: 'Willian' = 'Willian'; // A variável willian é do tipo literal 'Willian', ou seja, ela só pode receber o valor 'Willian'. Se tentarmos atribuir outro valor, como 'Maria', o TypeScript irá gerar um erro, pois não é permitido atribuir um valor diferente do tipo literal definido.
 
+let maria: 'Maria' = 'Maria'; // A variável maria é do tipo literal 'Maria', ou seja, ela só pode receber o valor 'Maria'. Se tentarmos atribuir outro valor, como 'Willian', o TypeScript irá gerar um erro, pois não é permitido atribuir um valor diferente do tipo literal definido.
+
 function fazerRequisicao(url: string, method: 'GET' | 'POST') { 
     // Lógica para fazer a requisição
     console.log(`Fazendo requisição para ${url} com método ${method}`);
