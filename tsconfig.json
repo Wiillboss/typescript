@@ -13,6 +13,9 @@
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
+
+    // o lib é a biblioteca de tipos que o TypeScript irá usar para compilar o código, e o esnext é a biblioteca de tipos mais recente do JavaScript, e é recomendado para projetos modernos que utilizam recursos avançados do JavaScript, como async/await, classes, etc. E para usar o nodejs é necessário adicionar as types do nodejs, ou seja,
+    
     // "types": ["node"],
     // and npm install -D @types/node
     // Other Outputs
