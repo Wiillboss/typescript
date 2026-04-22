@@ -8,6 +8,8 @@
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
     "target": "esnext",
+    //o target é a versão do JavaScript que o TypeScript irá compilar, ou seja, a versão do JavaScript que o navegador ou ambiente de execução irá entender, e o module é o sistema de módulos que o TypeScript irá usar para importar e exportar módulos, e o nodenext é o sistema de módulos recomendado para projetos Node.js, e o esnext é a versão mais recente do JavaScript, e é recomendado para projetos modernos que utilizam recursos avançados do JavaScript, como async/await, classes, etc.
+
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
