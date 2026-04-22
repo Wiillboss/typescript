@@ -2,7 +2,16 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    
+  
+    //removeComments: true,
+    //o removeComments é uma opção que remove os comentários do código compilado, e é recomendado para projetos que não precisam dos comentários no código compilado, como por exemplo, projetos de produção, onde os comentários podem aumentar o tamanho do arquivo compilado e diminuir a performance do projeto.
+
+    //noEmit: true,
+    //o noEmit é uma opção que impede o TypeScript de gerar arquivos compilados, e é recomendado para projetos que não precisam dos arquivos compilados, como por exemplo, projetos de teste, onde os arquivos compilados não são necessários para rodar os testes, ou projetos de desenvolvimento, onde os arquivos compilados não são necessários para rodar o projeto, e é recomendado para projetos que utilizam ferramentas de build como o webpack, onde os arquivos compilados são gerados pelo webpack e não pelo TypeScript. E para usar o noEmit é necessário usar o terminal npm run build para gerar os arquivos compilados, ou seja, o noEmit é recomendado para projetos que utilizam ferramentas de build como o webpack, onde os arquivos compilados são gerados pelo webpack e não pelo TypeScript, e é recomendado para projetos de desenvolvimento, onde os arquivos compilados não são necessários para rodar o projeto, e é recomendado para projetos de teste, onde os arquivos compilados não são necessários para rodar os testes.
+
+    //noEmitOnError: true,
+    //o noEmitOnError é uma opção que impede o TypeScript de gerar arquivos compilados quando houver erros de compilação, e é recomendado para projetos que precisam garantir que os arquivos compilados sejam gerados apenas quando o código estiver livre de erros, como por exemplo, projetos de produção, onde os arquivos compilados devem ser gerados apenas quando o código estiver livre de erros, e é recomendado para projetos de desenvolvimento, onde os arquivos compilados devem ser gerados apenas quando o código estiver livre de erros, e é recomendado para projetos de teste, onde os arquivos compilados devem ser gerados apenas quando o código estiver livre de erros.
+
     // "rootDir": "./src",
     //o rootDir é a pasta onde o TypeScript irá procurar os arquivos de código-fonte para compilar, e o src é a pasta onde geralmente ficam os arquivos de código-fonte do projeto, e é recomendado para projetos organizados, onde os arquivos de código-fonte ficam em uma pasta separada dos arquivos de configuração e outros arquivos do projeto.
 
