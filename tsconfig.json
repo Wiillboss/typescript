@@ -2,8 +2,13 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
+    
     // "rootDir": "./src",
+    //o rootDir é a pasta onde o TypeScript irá procurar os arquivos de código-fonte para compilar, e o src é a pasta onde geralmente ficam os arquivos de código-fonte do projeto, e é recomendado para projetos organizados, onde os arquivos de código-fonte ficam em uma pasta separada dos arquivos de configuração e outros arquivos do projeto.
+
     // "outDir": "./dist",
+    //o outDir é a pasta onde o TypeScript irá colocar os arquivos compilados, e o dist é a pasta onde geralmente ficam os arquivos compilados do projeto, e é recomendado para projetos organizados, onde os arquivos compilados ficam em uma pasta separada dos arquivos de código-fonte e outros arquivos do projeto.
+
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
