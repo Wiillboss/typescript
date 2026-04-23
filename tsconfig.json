@@ -40,10 +40,18 @@
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
     // Style Options
+    
     // "noImplicitReturns": true,
+    //noImplicitReturns é uma opção que impede o TypeScript de gerar arquivos compilados quando houver funções que não retornam um valor, e é recomendado para projetos que precisam garantir que todas as funções retornem um valor, como por exemplo, projetos de produção, onde as funções devem retornar um valor para evitar erros de runtime, e é recomendado para projetos de desenvolvimento, onde as funções devem retornar um valor para evitar erros de runtime, e é recomendado para projetos de teste, onde as funções devem retornar um valor para evitar erros de runtime.
+
     // "noImplicitOverride": true,
+    
     // "noUnusedLocals": true,
+    //noUnusedLocals é uma opção que impede o TypeScript de gerar arquivos compilados quando houver variáveis locais não utilizadas, e é recomendado para projetos que precisam garantir que o código esteja limpo e sem variáveis não utilizadas. E para usar o noUnusedLocals é necessário usar o terminal npm run build para gerar os arquivos compilados, ou seja, o noUnusedLocals é recomendado para projetos que utilizam ferramentas de build como o webpack, onde os arquivos compilados são gerados pelo webpack e não pelo TypeScript, e é recomendado para projetos de desenvolvimento, onde os arquivos compilados não são necessários para rodar o projeto, e é recomendado para projetos de teste, onde os arquivos compilados não são necessários para rodar os testes.
+
     // "noUnusedParameters": true,
+    //noUnusedParameters é uma opção que impede o TypeScript de gerar arquivos compilados quando houver parâmetros não utilizados, e é recomendado para projetos que precisam garantir que o código esteja limpo e sem parâmetros não utilizados. E para usar o noUnusedParameters é necessário usar o terminal npm run build para gerar os arquivos compilados, ou seja, o noUnusedParameters é recomendado para projetos que utilizam ferramentas de build como o webpack, onde os arquivos compilados são gerados pelo webpack e não pelo TypeScript, e é recomendado para projetos de desenvolvimento, onde os arquivos compilados não são necessários para rodar o projeto, e é recomendado para projetos de teste, onde os arquivos compilados não são necessários para rodar os testes.
+
     // "noFallthroughCasesInSwitch": true,
     // "noPropertyAccessFromIndexSignature": true,
     // Recommended Options
